@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+body{
+    font-family:sans-serif;
+    background-color:rgb(8, 10, 10)
+    
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px 5%;
+}
+.logo{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 2.3%;
+    color: #94d8d8;
+}
+span{
+    color:rgb(29, 170, 170);
+}
+
+
+
+.navlist{
+    display:flex;
+    justify-content: space-between;
+}
+.navlist a{
+    color: rgb(43, 182, 192);
+    font-weight: 600px;
+    padding: 10px 20px;
+    font-size: 28px;
+
+}
+.navlist a:hover{
+    color:black;
+}
+
+#menu-icon{
+    font-size: 1.8rem;
+    z-index:10001;
+    cursor: pointer;
+    margin-left: 25px;
+    border-radius: 2px;
+    color: white;
+
+}
+section{
+    padding: 100px 10%;
+}
+.home{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-gap: 4em;
+
+}
+.home-content{
+    max-width: 600px;
+}   
+.home-content h1{
+    font-size: 40px;
+    color: rgb(29, 170, 170);
+}
+.change-text{
+    font-size: 1.3rem;
+    font-weight: 600;
+}.change-text h3{
+    display: inline-flex;
+    color: #94d8d8;
+    margin: 0;
+    vertical-align: top;
+}
+.change-text h3.word{
+    position: absolute;
+    display: flex;
+}
+.home-content p{
+    color:#cef3f3
+   
+    
+}
+.info-box{
+    display: inline-flex;
+    justify-content: space-between; 
+    align-items: center;
+    width:30px;
+    margin: 1rem 0.2rem;
+}
+.email-info h5{
+    font-weight: 600;
+    color:white;
+    font-size: 1rem;
+}
+.email-info span{
+    font-size: 1.2rem;
+    color:rgb(185, 231, 233);
+}
+.btn-box{
+    display: flex;
+    justify-content: space-between;
+    width:320px
+
+}
+.btn-box a.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    background-color: rgb(29, 214, 228);
+    color: rgb(3, 51, 51);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid rgb(3, 51, 51);
+ 
+}
+.btn-box a.btn:hover{
+    background-color:transparent;
+}
+.social-net a{
+    display: inline-flex;
+    width: 45px;
+    height:40px;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+    color: rgb(40, 241, 241);
+   weight:20px;
+    border: 2px solid  rgb(40, 241, 241);
+    
+    margin-top: 20px;
+     box-shadow:0 0 5px #00ffff
+     0 0 10px  #00ffff
+     0 0 15px #00ffff
+
+}
+.social-net a:hover{
+   color:rgb(11, 12, 12);
+
+}
+.social-net a i{
+    font-size: 1.5rem;
+}
+.social-net a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 0;
+    transition: .6s;
+    z-index: -1;
+}
+.social-net a:hover::before{
+    width: 100%;
+}
+
+/*------------------------about-------------------------*/
+
+.about{
+    display: flex;
+   
+    background-color: gray;
+}
+
+.info h2{
+    font-size: 2rem;
+    margin-right: 10%;
+}
+.info p{
+    margin-top: 8%;
+    font-size: 1.5rem;
+}
+.info span{
+    font-size: 1.1rem;
+}
+
+/*--------------------------skills-----------------------------*/
+
+
+.skills{
+    display: flex;
+    justify-content:center;
+   align-items: flex-start;
+  
+
+}
+
+
+.About p{
+    font-size: 2.7rem;
+    color: rgb(29, 170, 170);
+    margin-left: 40px;
+   
+}
+.btn1-box{
+   
+    justify-content: space-evenly;
+    width:520px;
+   
+}
+.btn1-box a.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  margin-top: 5%;
+    margin-left: 115%;
+    width: 440px;
+    height: 40px;
+   background-color: rgb(144, 218, 214);
+   color: rgb(3, 51, 51);
+   font-size: 1rem;
+   letter-spacing: 1px;
+   font-weight: 600;
+   border-radius: 5px;
+   border: 3px solid rgb(3, 51, 51);
+ 
+}
+    
+/*-----------------------project------------------*/
+
+.portfolio{
+    display: grid;
+   
+    background-color: gray;
+}
+ .main-text h2{
+    font-size: 40px;
+    margin-left: 40%;
+ }
+ /*.portfolio-gallary{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(270px,2fr));
+    gap: 5rem;
+    margin-top: 100px;
+    margin-left: 25%;
+ }*/
+
+ .portfolio-gallary{
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-top: 12%;
+ }
+ .port-image{
+    margin-right: 30%;
+   border-radius: 2px;
+    border-style:initial;
+    border-color:2px solide  black;
+ }
+ /*---------------------footer---------------*/
+
+
+ .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .Contact h2{
+    font-size: 2rem;
+    margin-left: 45%;
+    margin-top: 20px;
+    color: white;
+ }
+   
